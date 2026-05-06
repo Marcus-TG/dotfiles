@@ -8,11 +8,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-
-if [ "$TERM" = "xterm-kitty" ]; then
-  alias ssh="kitty +kitten ssh"
-fi
-
 fastfetch
 
 # Yazi shell integration — cd on quit
@@ -27,6 +22,5 @@ function y() {
 
 export PATH="$HOME/.npm-global/bin:$PATH"
 eval "$(zoxide init zsh)"
-eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"

@@ -10,6 +10,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 fastfetch
 
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # Yazi shell integration — cd on quit
 function y() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXX")"

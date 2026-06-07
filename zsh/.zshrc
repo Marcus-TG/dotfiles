@@ -24,7 +24,7 @@ function y() {
   rm -f -- "$tmp"
 }
 
-export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 # zoxide must be initialized last. _ZO_DOCTOR=0 silences a false-positive

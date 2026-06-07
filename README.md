@@ -37,6 +37,8 @@ Defined in `zsh/.zshrc`:
 | `cat`      | `bat`             | Syntax-highlighted, paged `cat`          |
 | `cd`       | `z`               | zoxide jump (frecency-based `cd`)        |
 | `cds`      | `zi`              | zoxide interactive directory picker      |
+| `lg`       | `lazygit`         | Git TUI                                  |
+| `ld`       | `lazydocker`      | Docker TUI                               |
 | `..`       | `cd ..`           | Up one directory                         |
 | `...`      | `cd ../..`        | Up two directories                       |
 | `....`     | `cd ../../..`     | Up three directories                     |

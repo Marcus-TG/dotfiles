@@ -25,5 +25,8 @@ function y() {
 export PATH="$HOME/.npm-global/bin:$PATH"
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
-# zoxide must be initialized last
+# zoxide must be initialized last. _ZO_DOCTOR=0 silences a false-positive
+# "initialize zoxide last" warning that only fires in non-interactive
+# automation shells; zoxide is already last here.
+export _ZO_DOCTOR=0
 eval "$(zoxide init zsh)"

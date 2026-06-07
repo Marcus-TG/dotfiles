@@ -31,11 +31,11 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     // Blur the whole screen, then keep only the bright regions so the
     // background stays dark and only text/cursor contribute to the glow.
     vec3 blurred = bloomBlur(iChannel0, uv, texel, 2.5);
-    float threshold = 0.20;
+    float threshold = 0.25;
     vec3 glow = max(blurred - threshold, 0.0);
 
     // Intensity of the neon halo. Bump this up for a stronger glow.
-    float strength = 1.6;
+    float strength = 1.15;
 
     fragColor = vec4(original + glow * strength, 1.0);
 }

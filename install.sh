@@ -46,6 +46,17 @@ symlink_configs() {
   if [ -d $DOTFILES/ghostty ]; then
     ln -sf $DOTFILES/ghostty ~/.config/ghostty
   fi
+
+  # Starship
+  if [ -f $DOTFILES/starship/starship.toml ]; then
+    ln -sf $DOTFILES/starship/starship.toml ~/.config/starship.toml
+  fi
+
+  # bat
+  if [ -d $DOTFILES/bat ]; then
+    [ -e ~/.config/bat ] && [ ! -L ~/.config/bat ] && mv ~/.config/bat ~/.config/bat.backup
+    ln -sfn $DOTFILES/bat ~/.config/bat
+  fi
 }
 
 # Detect OS and install

@@ -1,0 +1,8 @@
+# bat configuration
+--theme="Catppuccin Mocha"
+
+# Show line numbers, git modifications, and file header
+--style="numbers,changes,header"
+
+# Use italic text where the theme supports it
+--italic-text=always

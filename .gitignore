@@ -1,0 +1,18 @@
+# OS cruft
+.DS_Store
+
+# Backups created by install.sh
+*.backup
+
+# AI assistant dirs only track curated instruction files (ai/**/{CLAUDE,AGENTS,GEMINI}.md).
+# Guard against ever committing credentials or machine state if more gets added.
+ai/**/auth.json
+ai/**/*credentials*
+ai/**/oauth_creds.json
+ai/**/*.sqlite*
+ai/**/sessions/
+ai/**/history/
+ai/**/logs*
+ai/**/cache/
+ai/**/installation_id
+ai/**/*machine*

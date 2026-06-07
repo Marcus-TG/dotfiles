@@ -156,6 +156,17 @@ symlink_configs() {
     [ -e ~/.config/bat ] && [ ! -L ~/.config/bat ] && mv ~/.config/bat ~/.config/bat.backup
     ln -sfn $DOTFILES/bat ~/.config/bat
   fi
+
+  # AI assistant global instructions. The parent dir only exists once the tool
+  # has run at least once, so create it before linking.
+  link_ai_config() {
+    local src="$1" dest="$2"
+    mkdir -p "$(dirname "$dest")"
+    ln -sf "$src" "$dest"
+  }
+  [ -f $DOTFILES/ai/claude/CLAUDE.md ] && link_ai_config "$DOTFILES/ai/claude/CLAUDE.md" ~/.claude/CLAUDE.md
+  [ -f $DOTFILES/ai/codex/AGENTS.md ] && link_ai_config "$DOTFILES/ai/codex/AGENTS.md" ~/.codex/AGENTS.md
+  [ -f $DOTFILES/ai/gemini/GEMINI.md ] && link_ai_config "$DOTFILES/ai/gemini/GEMINI.md" ~/.gemini/GEMINI.md
 }
 
 # Detect OS and install

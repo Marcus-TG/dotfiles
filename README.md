@@ -31,6 +31,7 @@ before linking. Package sources by platform:
 | `ghostty/` | `~/.config/ghostty` | Ghostty terminal config + GLSL shaders |
 | `starship/` | `~/.config/starship.toml` | Catppuccin Mocha prompt          |
 | `bat/`  | `~/.config/bat`    | `bat` theme (Catppuccin Mocha)           |
+| `ai/`   | `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`, `~/.gemini/GEMINI.md` | Global instructions for Claude / Codex / Gemini CLIs |
 
 ## Aliases & functions
 

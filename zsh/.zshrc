@@ -23,6 +23,7 @@ function y() {
 }
 
 export PATH="$HOME/.npm-global/bin:$PATH"
-eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
+# zoxide must be initialized last
+eval "$(zoxide init zsh)"

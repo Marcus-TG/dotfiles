@@ -21,7 +21,27 @@ Linux), then symlinks the configs into place. Existing `~/.zshrc` and
 | `zsh/`  | `~/.zshrc`         | Shell aliases, completion, tool init     |
 | `git/`  | `~/.gitconfig`     | Git identity and URL rewrites            |
 | `nvim/` | `~/.config/nvim`   | Neovim config (kickstart.nvim based)     |
-| `ghostty/` | `~/.config/ghostty` | Ghostty terminal config              |
+| `ghostty/` | `~/.config/ghostty` | Ghostty terminal config + GLSL shaders |
+| `starship/` | `~/.config/starship.toml` | Catppuccin Mocha prompt          |
+| `bat/`  | `~/.config/bat`    | `bat` theme (Catppuccin Mocha)           |
+
+## Aliases & functions
+
+Defined in `zsh/.zshrc`:
+
+| Alias / fn | Expands to        | Purpose                                  |
+| ---------- | ----------------- | ---------------------------------------- |
+| `ls`       | `eza --icons`     | Directory listing with file-type icons   |
+| `tree`     | `eza -T`          | Recursive tree view                      |
+| `grep`     | `grep --color=auto` | Colorized matches                      |
+| `cat`      | `bat`             | Syntax-highlighted, paged `cat`          |
+| `cd`       | `z`               | zoxide jump (frecency-based `cd`)        |
+| `cds`      | `zi`              | zoxide interactive directory picker      |
+| `..`       | `cd ..`           | Up one directory                         |
+| `...`      | `cd ../..`        | Up two directories                       |
+| `....`     | `cd ../../..`     | Up three directories                     |
+| `.....`    | `cd ../../../..`  | Up four directories                      |
+| `y`        | function          | Open `yazi`; `cd` to its dir on quit     |
 
 ## Tools
 

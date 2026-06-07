@@ -1,0 +1,23 @@
+font-family = "Monaspace Neon"
+font-size = 14
+font-thicken = true
+theme = "catppuccin-mocha"
+background-opacity = 0.92
+background-blur-radius = 20
+window-decoration = false
+window-padding-x = 12
+window-padding-y = 10
+cursor-style = bar
+cursor-blink = false
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+scrollback-limit = 10000
+clipboard-read = allow
+clipboard-write = allow
+clipboard-paste-protection = true
+window-inherit-working-directory = true
+keybind = cmd+t=new_tab
+keybind = cmd+w=close_surface
+keybind = cmd+shift+h=goto_tab:previous
+keybind = cmd+shift+l=goto_tab:next
+keybind = cmd+enter=toggle_fullscreen

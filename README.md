@@ -21,6 +21,7 @@ Linux), then symlinks the configs into place. Existing `~/.zshrc` and
 | `zsh/`  | `~/.zshrc`         | Shell aliases, completion, tool init     |
 | `git/`  | `~/.gitconfig`     | Git identity and URL rewrites            |
 | `nvim/` | `~/.config/nvim`   | Neovim config (kickstart.nvim based)     |
+| `ghostty/` | `~/.config/ghostty` | Ghostty terminal config              |
 
 ## Tools
 

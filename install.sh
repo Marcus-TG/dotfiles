@@ -41,6 +41,11 @@ symlink_configs() {
   if [ -d $DOTFILES/nvim ]; then
     ln -sf $DOTFILES/nvim ~/.config/nvim
   fi
+
+  # Ghostty
+  if [ -d $DOTFILES/ghostty ]; then
+    ln -sf $DOTFILES/ghostty ~/.config/ghostty
+  fi
 }
 
 # Detect OS and install

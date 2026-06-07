@@ -9,10 +9,7 @@ font-feature = dlig
 font-feature = ss01
 font-feature = ss02
 font-feature = ss03
-# Shaders run in order: the cursor trail is drawn first so the neon
-# glow below also blooms the trail.
 custom-shader = shaders/cursor-trail.glsl
-custom-shader = shaders/neon-glow.glsl
 custom-shader-animation = true
 theme = "Catppuccin Mocha"
 background-opacity = 0.92

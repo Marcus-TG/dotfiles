@@ -12,6 +12,7 @@ install_mac() {
   fi
 
   brew install eza bat zoxide starship atuin yazi fastfetch \
+    tree-sitter-cli \
     lazygit lazydocker \
     colima docker docker-compose
 
@@ -22,6 +23,7 @@ install_linux() {
   echo "Linux detected..."
 
   yay -S --needed eza bat zoxide starship atuin yazi fastfetch \
+    tree-sitter-cli \
     lazygit lazydocker \
     docker docker-compose ghostty
 }

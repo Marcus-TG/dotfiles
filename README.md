@@ -10,9 +10,16 @@ cd ~/dotfiles
 ./install.sh
 ```
 
-`install.sh` detects the OS, installs packages (Homebrew on macOS, `yay` on
-Linux), then symlinks the configs into place. Existing `~/.zshrc` and
-`~/.gitconfig` are backed up to `*.backup` before linking.
+`install.sh` detects the OS, installs packages, then symlinks the configs into
+place. Existing `~/.zshrc` and `~/.gitconfig` are backed up to `*.backup`
+before linking. Package sources by platform:
+
+- **macOS** — Homebrew
+- **Arch** — `yay`
+- **Ubuntu/Debian** — `apt` for what's packaged, plus the official installers
+  (starship, atuin), `cargo` (yazi, tree-sitter-cli), and GitHub release
+  binaries (lazygit, lazydocker) for the rest. `bat` is symlinked from
+  `batcat`. Ghostty has no apt package — install it manually.
 
 ## What's here
 

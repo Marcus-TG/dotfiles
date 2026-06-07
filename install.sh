@@ -33,6 +33,10 @@ symlink_configs() {
   [ -f ~/.zshrc ] && mv ~/.zshrc ~/.zshrc.backup
   ln -sf $DOTFILES/zsh/.zshrc ~/.zshrc
 
+  # Git
+  [ -f ~/.gitconfig ] && mv ~/.gitconfig ~/.gitconfig.backup
+  ln -sf $DOTFILES/git/.gitconfig ~/.gitconfig
+
   # Nvim (only if config exists in dotfiles)
   if [ -d $DOTFILES/nvim ]; then
     ln -sf $DOTFILES/nvim ~/.config/nvim

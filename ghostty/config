@@ -1,6 +1,8 @@
 font-family = "Monaspace Neon"
 font-size = 14
 font-thicken = true
+custom-shader = shaders/neon-glow.glsl
+custom-shader-animation = true
 theme = "Catppuccin Mocha"
 background-opacity = 0.92
 background-blur-radius = 20
